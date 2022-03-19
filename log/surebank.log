@@ -1,0 +1,535 @@
+2022-03-18 21:28:50.358  INFO 19356 --- [restartedMain] com.bank.sure.SurebankApplication        : Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 19356 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 21:28:50.359  INFO 19356 --- [restartedMain] com.bank.sure.SurebankApplication        : No active profile set, falling back to 1 default profile: "default"
+2022-03-18 21:28:50.405  INFO 19356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 21:28:50.406  INFO 19356 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 21:28:51.063  INFO 19356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 21:28:51.116  INFO 19356 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+2022-03-18 21:28:51.666  INFO 19356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-03-18 21:28:51.677  INFO 19356 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-03-18 21:28:51.678  INFO 19356 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 21:28:51.890  INFO 19356 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-03-18 21:28:51.890  INFO 19356 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1483 ms
+2022-03-18 21:28:52.034  INFO 19356 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 21:28:52.093  INFO 19356 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-18 21:28:52.291  INFO 19356 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-18 21:28:52.409  INFO 19356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-03-18 21:28:52.594  INFO 19356 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-03-18 21:28:52.613  INFO 19356 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 21:28:53.262  INFO 19356 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 21:28:53.270  INFO 19356 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:28:53.543  WARN 19356 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 21:28:53.807  INFO 19356 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-03-18 21:28:53.846  INFO 19356 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 21:28:53.858  INFO 19356 --- [restartedMain] com.bank.sure.SurebankApplication        : Started SurebankApplication in 3.895 seconds (JVM running for 4.814)
+2022-03-18 21:28:58.515  INFO 19356 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 21:28:58.516  INFO 19356 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-03-18 21:28:58.517  INFO 19356 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-03-18 21:32:19.885  INFO 19356 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:32:19.888  INFO 19356 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-03-18 21:32:19.893  INFO 19356 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-03-18 21:32:19,960 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 19356 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 21:32:19,960 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 21:32:20,110 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 21:32:20,122 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2022-03-18 21:32:20,205 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 21:32:20,206 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 21:32:20,206 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 21:32:20,229 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 21:32:20,230 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 268 ms
+2022-03-18 21:32:20,253 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 21:32:20,259 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-03-18 21:32:20,295 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-03-18 21:32:20,295 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 21:32:20,327 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 21:32:20,328 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:32:20,383 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 21:32:20,441 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 21:32:20,449 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 21:32:20,455 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.519 seconds (JVM running for 211.411)
+2022-03-18 21:32:20,457 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 21:32:39,168 INFO  [http-nio-8081-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 21:32:39,170 INFO  [http-nio-8081-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-03-18 21:32:39,171 INFO  [http-nio-8081-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-03-18 21:33:19,958 INFO  [RMI TCP Connection(17)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-03-18 21:33:20,055 INFO  [RMI TCP Connection(17)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:33:20,055 INFO  [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2022-03-18 21:33:20,060 INFO  [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2022-03-18 21:33:30,045 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 14616 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 21:33:30,047 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 21:33:30,081 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 21:33:30,082 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 21:33:30,573 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 21:33:30,614 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2022-03-18 21:33:31,068 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 21:33:31,076 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 21:33:31,076 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 21:33:31,257 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 21:33:31,257 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1175 ms
+2022-03-18 21:33:31,382 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 21:33:31,423 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-18 21:33:31,541 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-18 21:33:31,627 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-03-18 21:33:31,783 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-03-18 21:33:31,799 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 21:33:32,323 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 21:33:32,328 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:33:32,605 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 21:33:32,868 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 21:33:32,895 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 21:33:32,903 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 3.212 seconds (JVM running for 4.004)
+2022-03-18 21:33:47,137 INFO  [http-nio-8081-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 21:33:47,138 INFO  [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-03-18 21:33:47,139 INFO  [http-nio-8081-exec-1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-03-18 21:35:07,550 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:35:07,553 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-03-18 21:35:07,559 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-03-18 21:35:07,614 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 4444 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 21:35:07,616 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 21:35:07,647 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 14616 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 21:35:07,648 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 21:35:07,660 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 21:35:07,660 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 21:35:07,846 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 21:35:07,856 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2022-03-18 21:35:07,949 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 21:35:07,949 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 21:35:07,950 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 21:35:07,977 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 21:35:07,978 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 329 ms
+2022-03-18 21:35:08,007 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 21:35:08,015 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-03-18 21:35:08,063 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-03-18 21:35:08,063 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 21:35:08,104 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 21:35:08,104 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:35:08,179 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 21:35:08,273 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 21:35:08,283 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 21:35:08,289 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.68 seconds (JVM running for 99.39)
+2022-03-18 21:35:08,295 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 21:35:08,343 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 21:35:08,406 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 53 ms. Found 1 JPA repository interfaces.
+2022-03-18 21:35:08,933 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 21:35:08,941 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 21:35:08,942 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 21:35:09,144 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 21:35:09,144 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1483 ms
+2022-03-18 21:35:09,289 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 21:35:09,333 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-18 21:35:09,467 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-18 21:35:09,552 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-03-18 21:35:09,722 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-03-18 21:35:09,738 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 21:35:10,275 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 21:35:10,282 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:35:10,576 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 21:35:10,817 WARN  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:Unable to start LiveReload server
+2022-03-18 21:35:10,832 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2022-03-18 21:35:10,833 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:35:10,835 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-03-18 21:35:10,840 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-03-18 21:35:10,843 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2022-03-18 21:35:10,851 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-18 21:35:10,872 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2022-03-18 21:35:16,177 INFO  [RMI TCP Connection(10)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-03-18 21:35:16,252 INFO  [RMI TCP Connection(10)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:35:16,252 INFO  [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2022-03-18 21:35:16,256 INFO  [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2022-03-18 21:35:21,138 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 21556 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 21:35:21,141 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 21:35:21,183 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 21:35:21,184 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 21:35:21,764 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 21:35:21,808 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 37 ms. Found 1 JPA repository interfaces.
+2022-03-18 21:35:22,288 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 21:35:22,296 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 21:35:22,296 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 21:35:22,480 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 21:35:22,481 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1297 ms
+2022-03-18 21:35:22,592 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 21:35:22,629 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-18 21:35:22,764 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-18 21:35:22,851 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-03-18 21:35:23,046 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-03-18 21:35:23,070 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 21:35:23,747 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 21:35:23,753 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:35:24,077 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 21:35:24,367 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 21:35:24,406 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 21:35:24,418 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 3.662 seconds (JVM running for 4.465)
+2022-03-18 21:35:25,459 INFO  [http-nio-8081-exec-2] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 21:35:25,460 INFO  [http-nio-8081-exec-2] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-03-18 21:35:25,460 INFO  [http-nio-8081-exec-2] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 0 ms
+2022-03-18 21:35:25,493 INFO  [http-nio-8081-exec-2] com.bank.sure.controller.MessageController:Client want to delete message id 5:
+2022-03-18 21:35:25,532 WARN  [http-nio-8081-exec-2] org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver:Resolved [com.bank.sure.exception.ResourceNotFoundException: Message with id 5 not found]
+2022-03-18 21:36:31,870 INFO  [http-nio-8081-exec-6] com.bank.sure.controller.MessageController:Client want to delete message id 5:
+2022-03-18 21:51:51,070 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:51:51,074 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-03-18 21:51:51,077 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-03-18 21:51:51,150 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 21556 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 21:51:51,150 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 21:51:51,288 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 21:51:51,297 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2022-03-18 21:51:51,363 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 21:51:51,363 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 21:51:51,364 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 21:51:51,380 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 21:51:51,380 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 228 ms
+2022-03-18 21:51:51,402 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 21:51:51,409 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-03-18 21:51:51,446 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-03-18 21:51:51,447 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 21:51:51,480 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 21:51:51,480 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:51:51,531 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 21:51:51,589 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 21:51:51,597 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 21:51:51,603 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.48 seconds (JVM running for 991.649)
+2022-03-18 21:51:51,604 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 21:52:09,039 INFO  [RMI TCP Connection(28)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-03-18 21:52:09,121 INFO  [RMI TCP Connection(28)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 21:52:09,122 INFO  [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2022-03-18 21:52:09,126 INFO  [RMI TCP Connection(28)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2022-03-18 22:05:24,040 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:05:24,041 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:05:24,088 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 22:05:24,088 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 22:05:24,714 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:05:24,759 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 34 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:05:25,265 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:05:25,274 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:05:25,274 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:05:25,473 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:05:25,473 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1384 ms
+2022-03-18 22:05:25,604 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:05:25,654 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-18 22:05:25,806 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-18 22:05:25,912 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-03-18 22:05:26,079 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-03-18 22:05:26,096 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:05:26,734 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:05:26,743 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:05:27,109 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 22:05:27,407 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 22:05:27,446 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 22:05:27,454 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 3.852 seconds (JVM running for 8.16)
+2022-03-18 22:05:35,560 INFO  [http-nio-8081-exec-3] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 22:05:35,562 INFO  [http-nio-8081-exec-3] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-03-18 22:05:35,562 INFO  [http-nio-8081-exec-3] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 0 ms
+2022-03-18 22:06:57,389 INFO  [http-nio-8081-exec-2] com.bank.sure.controller.MessageController:Client want to delete message id 100:
+2022-03-18 22:17:19,369 WARN  [http-nio-8081-exec-2] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:Resolved [com.bank.sure.exception.ResourceNotFoundException: Message with id 100 not found]
+2022-03-18 22:20:29,710 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:20:29,714 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-03-18 22:20:29,719 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-03-18 22:20:29,795 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:20:29,795 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:20:29,972 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:20:29,987 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:20:30,081 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:20:30,082 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:20:30,082 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:20:30,102 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:20:30,102 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 304 ms
+2022-03-18 22:20:30,130 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:20:30,136 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-03-18 22:20:30,287 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-03-18 22:20:30,287 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:20:30,324 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:20:30,324 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:20:30,377 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sureBankExceptionHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.bank.sure.exception.SureBankExceptionHandler] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5a243b50]
+2022-03-18 22:20:30,378 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:20:30,379 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown initiated...
+2022-03-18 22:20:30,380 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Shutdown completed.
+2022-03-18 22:20:30,380 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2022-03-18 22:20:30,388 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-18 22:20:30,411 ERROR [restartedMain] org.springframework.boot.SpringApplication:Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sureBankExceptionHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.bank.sure.exception.SureBankExceptionHandler] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5a243b50]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.4.jar:2.6.4]
+	at com.bank.sure.SurebankApplication.main(SurebankApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.bank.sure.exception.SureBankExceptionHandler] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@5a243b50]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.16.jar:5.3.16]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: BadRequestException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.16.jar:5.3.16]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: BadRequestException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.4.jar:2.6.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 29 common frames omitted
+2022-03-18 22:21:19,003 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:21:19,004 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:21:19,186 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:21:19,199 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:21:19,278 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:21:19,279 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:21:19,279 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:21:19,298 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:21:19,298 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 291 ms
+2022-03-18 22:21:19,323 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:21:19,326 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Starting...
+2022-03-18 22:21:19,365 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Start completed.
+2022-03-18 22:21:19,365 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:21:19,400 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:21:19,400 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:21:19,469 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 22:21:19,554 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 22:21:19,563 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 22:21:19,567 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.594 seconds (JVM running for 960.273)
+2022-03-18 22:21:19,572 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 22:22:07,165 INFO  [Thread-7] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:22:07,167 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown initiated...
+2022-03-18 22:22:07,171 INFO  [Thread-7] com.zaxxer.hikari.HikariDataSource:HikariPool-3 - Shutdown completed.
+2022-03-18 22:22:07,241 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:22:07,241 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:22:07,446 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:22:07,455 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:22:07,522 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:22:07,524 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:22:07,524 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:22:07,541 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:22:07,541 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 298 ms
+2022-03-18 22:22:07,571 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:22:07,578 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Starting...
+2022-03-18 22:22:07,613 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Start completed.
+2022-03-18 22:22:07,614 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:22:07,652 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:22:07,652 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:22:07,736 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 22:22:07,822 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 22:22:07,834 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 22:22:07,840 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.631 seconds (JVM running for 1008.545)
+2022-03-18 22:22:07,842 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 22:22:23,693 INFO  [Thread-14] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:22:23,695 INFO  [Thread-14] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown initiated...
+2022-03-18 22:22:23,699 INFO  [Thread-14] com.zaxxer.hikari.HikariDataSource:HikariPool-4 - Shutdown completed.
+2022-03-18 22:22:23,763 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:22:23,763 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:22:23,914 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:22:23,923 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:22:23,990 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:22:23,990 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:22:23,990 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:22:24,006 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:22:24,006 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 241 ms
+2022-03-18 22:22:24,029 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:22:24,034 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Starting...
+2022-03-18 22:22:24,071 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Start completed.
+2022-03-18 22:22:24,071 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:22:24,105 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:22:24,105 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:22:24,168 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 22:22:24,234 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 22:22:24,243 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 22:22:24,249 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.515 seconds (JVM running for 1024.954)
+2022-03-18 22:22:24,251 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 22:23:24,170 INFO  [Thread-18] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:23:24,171 INFO  [Thread-18] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown initiated...
+2022-03-18 22:23:24,174 INFO  [Thread-18] com.zaxxer.hikari.HikariDataSource:HikariPool-5 - Shutdown completed.
+2022-03-18 22:23:24,238 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:23:24,238 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:23:24,417 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:23:24,430 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:23:24,513 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:23:24,514 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:23:24,514 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:23:24,530 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:23:24,531 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 291 ms
+2022-03-18 22:23:24,557 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:23:24,564 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Starting...
+2022-03-18 22:23:24,610 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Start completed.
+2022-03-18 22:23:24,611 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:23:24,652 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:23:24,652 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:23:24,715 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 22:23:24,783 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 22:23:24,791 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 22:23:24,796 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.586 seconds (JVM running for 1085.501)
+2022-03-18 22:23:24,798 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 22:23:33,511 INFO  [Thread-22] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:23:33,512 INFO  [Thread-22] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown initiated...
+2022-03-18 22:23:33,518 INFO  [Thread-22] com.zaxxer.hikari.HikariDataSource:HikariPool-6 - Shutdown completed.
+2022-03-18 22:23:33,578 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:23:33,580 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:23:33,732 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:23:33,742 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:23:33,815 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:23:33,816 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:23:33,816 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:23:33,831 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:23:33,831 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 249 ms
+2022-03-18 22:23:33,856 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:23:33,860 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Starting...
+2022-03-18 22:23:33,895 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Start completed.
+2022-03-18 22:23:33,896 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:23:33,924 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:23:33,924 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:23:33,994 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 22:23:34,060 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 22:23:34,069 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 22:23:34,075 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 0.518 seconds (JVM running for 1094.78)
+2022-03-18 22:23:34,076 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener:Condition evaluation unchanged
+2022-03-18 22:24:07,327 INFO  [Thread-26] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:24:07,328 INFO  [Thread-26] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown initiated...
+2022-03-18 22:24:07,331 INFO  [Thread-26] com.zaxxer.hikari.HikariDataSource:HikariPool-7 - Shutdown completed.
+2022-03-18 22:24:07,401 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 792 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:24:07,402 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:24:07,572 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:24:07,583 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:24:07,671 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:24:07,672 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:24:07,672 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:24:07,691 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:24:07,691 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 287 ms
+2022-03-18 22:24:07,718 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:24:07,722 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Starting...
+2022-03-18 22:24:07,766 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Start completed.
+2022-03-18 22:24:07,766 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:24:07,803 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:24:07,803 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:24:07,865 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sureBankExceptionHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.bank.sure.exception.SureBankExceptionHandler] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c5d5709]
+2022-03-18 22:24:07,865 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:24:07,866 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Shutdown initiated...
+2022-03-18 22:24:07,866 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-8 - Shutdown completed.
+2022-03-18 22:24:07,867 INFO  [restartedMain] org.apache.catalina.core.StandardService:Stopping service [Tomcat]
+2022-03-18 22:24:07,871 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-03-18 22:24:07,875 ERROR [restartedMain] org.springframework.boot.SpringApplication:Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sureBankExceptionHandler': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.bank.sure.exception.SureBankExceptionHandler] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c5d5709]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.16.jar:5.3.16]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.4.jar:2.6.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.4.jar:2.6.4]
+	at com.bank.sure.SurebankApplication.main(SurebankApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.bank.sure.exception.SureBankExceptionHandler] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@2c5d5709]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321) ~[spring-core-5.3.16.jar:5.3.16]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267) ~[spring-beans-5.3.16.jar:5.3.16]
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: ConflictException
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3166) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2309) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467) ~[spring-core-5.3.16.jar:5.3.16]
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ConflictException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:398) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.4.jar:2.6.4]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521) ~[na:na]
+	... 29 common frames omitted
+2022-03-18 22:29:39,392 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 24212 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:29:39,393 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:29:39,427 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-03-18 22:29:39,427 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-03-18 22:29:39,935 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:29:39,978 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 36 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:29:40,435 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:29:40,442 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:29:40,443 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:29:40,618 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:29:40,618 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1191 ms
+2022-03-18 22:29:40,751 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:29:40,792 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-18 22:29:40,927 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-18 22:29:41,011 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-03-18 22:29:41,155 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-03-18 22:29:41,168 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-03-18 22:29:41,734 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-18 22:29:41,741 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:29:42,034 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-18 22:29:42,281 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-03-18 22:29:42,317 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-03-18 22:29:42,328 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 3.28 seconds (JVM running for 4.046)
+2022-03-18 22:31:06,603 INFO  [http-nio-8081-exec-5] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-03-18 22:31:06,604 INFO  [http-nio-8081-exec-5] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-03-18 22:31:06,605 INFO  [http-nio-8081-exec-5] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-03-18 22:31:06,833 WARN  [http-nio-8081-exec-5] org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.bank.sure.controller.response.Response> com.bank.sure.controller.MessageController.createMessage(com.bank.sure.controller.dto.MessageDTO): [Field error in object 'messageDTO' on field 'subject': rejected value [It dsdssdsdshkjjjhljshdljs bkj]; codes [Size.messageDTO.subject,Size.subject,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [messageDTO.subject,subject]; arguments []; default message [subject],20,5]; default message [Your subject 'It dsdssdsdshkjjjhljshdljs bkj' must be between 5 and 20 chars long]] ]
+2022-03-18 22:49:39,987 INFO  [Thread-5] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-18 22:49:39,990 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-03-18 22:49:39,994 INFO  [Thread-5] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-03-18 22:49:40,075 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 24212 (C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank\target\classes started by semra baki in C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank)
+2022-03-18 22:49:40,076 INFO  [restartedMain] com.bank.sure.SurebankApplication:No active profile set, falling back to 1 default profile: "default"
+2022-03-18 22:49:40,274 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-18 22:49:40,287 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 13 ms. Found 1 JPA repository interfaces.
+2022-03-18 22:49:40,446 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-03-18 22:49:40,448 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-03-18 22:49:40,449 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-18 22:49:40,547 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-03-18 22:49:40,548 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 470 ms
+2022-03-18 22:49:40,604 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-18 22:49:40,612 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Starting...
+2022-03-18 22:49:40,701 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-2 - Start completed.
+2022-03-18 22:49:40,702 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect

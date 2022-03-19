@@ -7,6 +7,8 @@ import java.util.stream.Collectors;
 import javax.validation.Valid;
 
 import org.modelmapper.ModelMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,6 +36,20 @@ public class MessageController {
 	
 	@Autowired
 	private ModelMapper modelMapper;
+	
+	
+	
+	//If you do not want to use Autowired annotation you can use this type of constructor OR if you do not want to use autowired or constructor you can use @AllArgsConstrutor@Lomlock
+	//annotation on the class these three all the same (creates the object
+//	public MessageController(MessageService messageService, ModelMapper modelMapper) {
+//		
+//		this.messageService = messageService;
+//		this.modelMapper = modelMapper;
+//	}
+
+	//this needed for recording the unusual situation in the program we can write on the file or console(console only for development time info)
+	//we do not unnessary things. Log level(trace-> debug-> info-> warn-> error)
+	private static Logger logger=LoggerFactory.getLogger(MessageController.class);
 	
 	private Message convertTo(MessageDTO messageDTO) {
 		Message message=modelMapper.map(messageDTO, Message.class);
@@ -88,6 +104,7 @@ public class MessageController {
 	@GetMapping("/request")
 	public ResponseEntity<MessageDTO> getMessagebyRequest(@RequestParam Long id){
 		
+		
 		Message message= messageService.getMessage(id);
 		
 		MessageDTO messageDTO=converttoDTO(message);
@@ -97,7 +114,7 @@ public class MessageController {
 	
 	@DeleteMapping("/{id}")
 	public ResponseEntity<Response>deleteMessage(@PathVariable Long id){
-		
+		logger.info("Client want to delete message id {}:",id);
 		messageService.deleteMessage(id);
 		
 		Response response= new Response();

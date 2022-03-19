@@ -14,7 +14,7 @@ public class SurebankApplication {
 		SpringApplication.run(SurebankApplication.class, args);
 	}
 	
-	
+	//model mapper is easy way to convert one object to an other object
 	@Bean
 	public ModelMapper modelMapper() {
 		

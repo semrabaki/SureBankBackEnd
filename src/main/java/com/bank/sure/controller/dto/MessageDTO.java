@@ -16,7 +16,7 @@ import lombok.Data;
 @Data
 public class MessageDTO {
 	
-
+//This class for data transfer - teh data to the client
 	
 	@NotBlank(message="Please Provide not blank name")
 	@NotNull(message="Please provide your name")
