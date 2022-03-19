@@ -1,10 +1,15 @@
 
 server:
     port: 8081
-error:
-    include-message: always
-    include-binding-errors: always
-    include-stacktrace: never
+    
+ #this is how you change the root path (context path)   (it was localhost) 
+#    servlet:
+#     context-path: /surebank/api
+
+    error:
+     include-message: always
+     include-binding-errors: always
+     include-stacktrace: never
 spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/surebankdb
