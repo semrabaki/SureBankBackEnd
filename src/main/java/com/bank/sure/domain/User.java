@@ -1,8 +1,10 @@
 package com.bank.sure.domain;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -12,7 +14,10 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -71,6 +76,11 @@ public class User {
 	@ManyToMany(fetch=FetchType.LAZY) //in many to many relation hibernate creates the 3rd table
 	@JoinTable(name="tbl_user_role", joinColumns=@JoinColumn(name="user_id"),inverseJoinColumns=@JoinColumn(name="role_id"))
 	private Set<Role> roles=new HashSet<>();
+	
+	
+	@OneToMany(mappedBy="user", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
+	@JsonIgnore
+	private List<Recipient>recepient;
 	
 
 }
