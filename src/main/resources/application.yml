@@ -28,4 +28,9 @@ logging:
   pattern:
    file: "%d %-5level [%thread] %logger:%msg%n"
    
- 
+surebank:
+  app:
+    jwtSecret: surebank@@12
+    jwtExpirationMs: 86400000
+
+   
