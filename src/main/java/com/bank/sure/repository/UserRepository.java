@@ -13,5 +13,13 @@ import com.bank.sure.exception.ResourceNotFoundException;
 public interface UserRepository extends JpaRepository<User, Long>{
 	
 	Optional<User> findByUserNameAndEnabledTrue(String username) throws ResourceNotFoundException;
+	
+	Boolean existsByUserName(String userName); //this is spring drived method 
+	
+	Boolean existsByEmail(String email);
+	
+	Boolean existsBySsn(String ssn);
+	
+	Optional<User>findOneWithAuthoritiesByUserName(String userName);
 
 }

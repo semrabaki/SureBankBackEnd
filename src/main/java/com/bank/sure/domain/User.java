@@ -81,6 +81,23 @@ public class User {
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
 	@JsonIgnore
 	private List<Recipient>recepient;
+
+
+	public User(String firstName, String lastName, String ssn, String userName, String email, String password,
+			String phoneNumber, String address, String dateOfBirth, Set<Role> roles) {
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.ssn = ssn;
+		this.userName = userName;
+		this.email = email;
+		this.password = password;
+		this.phoneNumber = phoneNumber;
+		this.address = address;
+		this.dateOfBirth = dateOfBirth;
+		this.roles = roles;
+	}
+	
 	
 
 }

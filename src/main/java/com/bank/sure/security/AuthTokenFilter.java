@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.util.AntPathMatcher;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -60,11 +61,11 @@ public class AuthTokenFilter extends OncePerRequestFilter{
 		return null;
 	}
 	
-//	@Override
-//	protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
-//		AntPathMatcher antPathMatcher=new AntPathMatcher();
-//		return antPathMatcher.match("/register",request.getServletPath()) ||
-//				antPathMatcher.match("/login", request.getServletPath());
-//	}
+	@Override  //This method is for not using filter for specitic paths. in this case it is /register and /login
+	protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
+		AntPathMatcher antPathMatcher=new AntPathMatcher();
+		return antPathMatcher.match("/register",request.getServletPath()) ||
+				antPathMatcher.match("/login", request.getServletPath());
+	}
 
 }
