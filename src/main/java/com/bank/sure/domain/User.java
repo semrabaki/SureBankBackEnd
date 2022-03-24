@@ -75,7 +75,7 @@ public class User {
 	
 	@ManyToMany(fetch=FetchType.LAZY) //in many to many relation hibernate creates the 3rd table
 	@JoinTable(name="tbl_user_role", joinColumns=@JoinColumn(name="user_id"),inverseJoinColumns=@JoinColumn(name="role_id"))
-	private Set<Role> roles=new HashSet<>();
+	private Set<Role> roles=new HashSet<>(); //roller unique oldugu icin sette sakliyoruz
 	
 	
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL, fetch=FetchType.LAZY)

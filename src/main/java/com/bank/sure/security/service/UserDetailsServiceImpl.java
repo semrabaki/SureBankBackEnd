@@ -24,8 +24,10 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	
 	@Override
 	@Transactional //if any error occurace during the traction spring roll backs all the operations.
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException { //bu security kismini calistirmak icin gerekli birsey. Spring boot bizi bu methodu implement 
+		//etmeye zorunlu kiliyor yoksa authentucation islemlerini yapamiyor
 		
+		//user repo ile databaseden  ilgili useri cekiyourz authentiction and log in islemleri icin
 		User user=userRepository.findByUserNameAndEnabledTrue(username).orElseThrow(()-> new ResourceNotFoundException(String.format(ExceptionMessage.USER_NOT_FOUND_MESSAGE,username)));
 	
 		return UserDetailsImpl.build(user);

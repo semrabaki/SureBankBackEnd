@@ -23,6 +23,14 @@ public class ExceptionMessage {
 	
 	public final static String CURRENTUSER_NOT_FOUND_MESSAGE="Current User not found";
 	
+	public final static String USERID_NOT_FOUND_MESSAGE="User with id %d not found";
+
+	public final static String RECIPIENT_ADD_ERROR_MESSAGE="Recipient could't be added. Recipient account belongs this user!";
+	
+	public final static String RECIPIENT_VALIDATION_ERROR_MESSAGE="Recipient name has not matched";
+	
+	public final static String RECIPIENT_NOT_FOUND_MESSAGE="Recipient with id %d not found";
+	
 	
 
 	

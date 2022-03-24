@@ -31,11 +31,11 @@ public class JwtUtils {
 
 	public String generateToken(Authentication authentication) {
 		
-		UserDetailsImpl userPrincipal= (UserDetailsImpl)authentication.getPrincipal();
+		UserDetailsImpl userDetails= (UserDetailsImpl)authentication.getPrincipal(); //getprincipal has the current user information
 		
 		
 		return Jwts.builder()
-				.setSubject(userPrincipal.getUsername())
+				.setSubject(userDetails.getUsername())
 				.setIssuedAt(new Date())
 				.setExpiration(new Date((new Date()).getTime()+jwtExpirationMs))
 				.signWith(SignatureAlgorithm.HS512, jwtSecret)
@@ -43,7 +43,7 @@ public class JwtUtils {
 	}
 	
 	
-	public boolean validateToken(String token) {
+	public boolean validateToken(String token) {  //Token validation
 		try {
 			Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(token);
 			return true;

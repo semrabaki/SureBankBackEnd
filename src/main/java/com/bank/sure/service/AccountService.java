@@ -39,5 +39,11 @@ public class AccountService {
 		
 		return ThreadLocalRandom.current().nextLong(smallest, biggest);
 	}
+	
+	
+	public Account findByAccountNumber(Long number) {
+		return accountRepository.findByAccountNumber(number)
+				.orElseThrow(()->new ResourceNotFoundException(String.format(ExceptionMessage.ACCOUNT_NOT_FOUND_MESSAGE,number)));
+	}
 
 }

@@ -66,15 +66,16 @@ public class WebSecutiryConfig extends WebSecurityConfigurerAdapter {
 		//it is (CSRF) cross site request forgery.
 		//I disable because this app(API app) open to the public.
 		//It may be inconvenient when you are in under development 
-		http.csrf().disable()
-		.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and()
-		.sessionManagement()
-		.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
-		.authorizeRequests().antMatchers("/register","/login")  //we apply autharization
+		http.csrf().disable()//veritabanina yazabilmek icin
+		.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and() //exceptionlarin yonetimi ile alakali izin veriyoruz
+		.sessionManagement() //session acip
+		.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()//sessioni statesiz bicimde kullaniyoruz
+		.authorizeRequests() //requestleri authirzed yap ve
+		.antMatchers("/register","/login")  //ant macthers la sifresiz alanlari belirle "/auth/** authdan sonrkailer hep sifresiz olsn demek
 		.permitAll()
 		.anyRequest().authenticated();
 		
-		http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class);
+		http.addFilterBefore(authenticationJwtTokenFilter(), UsernamePasswordAuthenticationFilter.class); //burda filtreleme methodunu cagiriyoruz/ 
 	}
 	
 	
