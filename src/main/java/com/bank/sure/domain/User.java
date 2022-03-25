@@ -80,7 +80,7 @@ public class User {
 	
 	@OneToMany(mappedBy="user", cascade=CascadeType.ALL, fetch=FetchType.LAZY)
 	@JsonIgnore
-	private List<Recipient>recepient;
+	private List<Recipient>recepients;
 
 
 	public User(String firstName, String lastName, String ssn, String userName, String email, String password,

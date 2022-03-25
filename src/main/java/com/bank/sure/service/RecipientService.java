@@ -44,4 +44,18 @@ public class RecipientService {
 			throw new ResourceNotFoundException(ExceptionMessage.RECIPIENT_VALIDATION_ERROR_MESSAGE);
 		}
 	}
+
+	public void removeRecipient(User user, Long id) {
+		
+		Recipient recipient=recipientRepository.findById(id).  //once recipient var mi die bakiyorum
+				orElseThrow(()-> new ResourceNotFoundException(String.format(ExceptionMessage.RECIPIENT_NOT_FOUND_MESSAGE,id) ));
+
+			if(user.getId().equals(recipient.getUser().getId())) {// we are checking if this recipient belongs to this user
+				recipientRepository.deleteById(recipient.getId());
+			}else {
+				throw new ConflictException("You dont have permission to delete recipient");
+			}
+			
+	}
+	
 }

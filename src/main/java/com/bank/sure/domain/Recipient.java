@@ -35,7 +35,7 @@ public class Recipient {
 	private User user;
 	
 	@OneToOne
-	@JoinColumn(name="account_id", unique=true) //EAch recipient has one account that is why one to one
+	@JoinColumn(name="account_id") //EAch recipient has one account that is why one to one
 	private Account account;
 
 }
