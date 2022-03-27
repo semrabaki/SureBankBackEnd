@@ -1,5 +1,7 @@
 package com.bank.sure.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,11 +23,24 @@ public class RecipientService {
 	@Autowired
 	AccountService accountService;
 	
+	
+	
 	public void addRecipient(RecipientRequest recipientRequest,User user) {
 			Account account=accountService.findByAccountNumber(recipientRequest.getAccountNumber()); //With this code we check if the recipient exist or not
 			
 			if(user.getId().equals(account.getUser().getId())) {
 				throw new ConflictException(ExceptionMessage.RECIPIENT_ADD_ERROR_MESSAGE);
+			}
+			
+//			Boolean isExist=recipientRepository.existsByUserAndAccount(user, account);
+//			
+//			if(isExist) {
+//				throw new ConflictException(ExceptionMessage.RECIPIENT_DUPLICATE_MESSAGE);
+//			}
+			Optional<Recipient>foundRecipient= recipientRepository.findRecipientByUserAndAccountId(user.getId(), account.getId());
+			
+			if(foundRecipient.isPresent()) {
+				throw new ConflictException(ExceptionMessage.RECIPIENT_DUPLICATE_MESSAGE);
 			}
 			
 			validateRecipient(recipientRequest,account);
@@ -50,11 +65,12 @@ public class RecipientService {
 		Recipient recipient=recipientRepository.findById(id).  //once recipient var mi die bakiyorum
 				orElseThrow(()-> new ResourceNotFoundException(String.format(ExceptionMessage.RECIPIENT_NOT_FOUND_MESSAGE,id) ));
 
-			if(user.getId().equals(recipient.getUser().getId())) {// we are checking if this recipient belongs to this user
-				recipientRepository.deleteById(recipient.getId());
-			}else {
-				throw new ConflictException("You dont have permission to delete recipient");
-			}
+		if(user.getId().equals(recipient.getUser().getId())) {
+			recipientRepository.deleteById(recipient.getId());
+		}else {
+			throw new ConflictException(ExceptionMessage.RECIPIENT_DELETE_PERMISSON_MESSAGE);
+		}
+		
 			
 	}
 	

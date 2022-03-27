@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import com.bank.sure.domain.Role;
+import com.bank.sure.domain.User;
 import com.bank.sure.domain.enumeration.UserRole;
 
 import lombok.AllArgsConstructor;
@@ -63,16 +64,19 @@ public class UserDTO {
 	} 
 
 	
-	/*
-	 * public User(String firstName, String lastName, String ssn, String username,
-	 * String email, String password, String phoneNumber, String address, String
-	 * dateOfBirth,Set<Role> roles){
-	 * 
-	 * this.firstName=firstName; this.lastName=lastName; this.ssn=ssn;
-	 * this.userName=username; this.email=email; this.password=password;
-	 * this.phoneNumber=phoneNumber; this.address=address;
-	 * this.dateOfBirth=dateOfBirth; this.roles=roles; }
-	 */
+	public UserDTO(Long id, User user) {
+		this.id = user.getId();
+		this.firstName = user.getFirstName();
+		this.lastName = user.getLastName();
+		this.ssn = user.getSsn();
+		this.userName = user.getUserName();
+		this.email = user.getEmail();
+		this.phoneNumber = user.getPhoneNumber();
+		this.address = user.getAddress();
+		this.enabled = user.getEnabled();
+		this.dateOfBirth = user.getDateOfBirth();
+		this.roles = user.getRoles();
+	}
 			
 	
 	

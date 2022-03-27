@@ -6,9 +6,12 @@ import java.util.Set;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.bank.sure.controller.dto.UserDTO;
 import com.bank.sure.controller.request.RegisterRequest;
 import com.bank.sure.controller.request.UserUpdateRequest;
 import com.bank.sure.domain.Role;
@@ -104,6 +107,11 @@ public class UserService { //User i databasee kaydetmek icin olusturdk
 		return userRepository.findById(id)
 			.orElseThrow(()-> new ResourceNotFoundException(String.format(ExceptionMessage.USERID_NOT_FOUND_MESSAGE, id)));
 	}
+	
+	public Page<UserDTO> getUsers(Pageable pageable){
+		return userRepository.findUsersPage(pageable);
+	}
+	
 
 	public void updateUser(Long id, UserUpdateRequest request) {
 		//we are cehcking is the email is exist or not

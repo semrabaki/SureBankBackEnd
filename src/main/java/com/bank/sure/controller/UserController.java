@@ -4,7 +4,10 @@ import javax.validation.Valid;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -66,6 +69,18 @@ public class UserController {
 	
 		return ResponseEntity.ok(new UserDTO());
 		
+	}
+	
+	//with this method we will learn how to use paging
+	//http://localhost:8081/user/all?page=1&size=2&sort=id,asc
+	//We can use this feature in the front end sidee for the paging process
+	//Pages start with index 0
+	//http://localhost:8081/user/all?page=0&size=2&sort=firstName,asc
+	@GetMapping("/all")
+	@PreAuthorize("hasRole('ADMIN')")
+	public ResponseEntity<Page<UserDTO>> getAllUsers(Pageable pageable){
+		Page<UserDTO> userPage = userService.getUsers(pageable);
+		return new ResponseEntity<>(userPage,HttpStatus.OK);
 	}
 	
 	@PutMapping("/{id}")

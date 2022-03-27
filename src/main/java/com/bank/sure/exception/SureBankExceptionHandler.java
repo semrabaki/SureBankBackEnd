@@ -57,6 +57,13 @@ public class SureBankExceptionHandler extends ResponseEntityExceptionHandler {
 		return new ResponseEntity<>(errorMessage,HttpStatus.CONFLICT);
 		
 	}
+	
+	@ExceptionHandler(BalanceNotAvailableException.class)
+	protected ResponseEntity<Object> handleBalanceNotAvailableException(BalanceNotAvailableException ex, WebRequest request){
+		ErrorMessage errorMessage=new ErrorMessage(new Date(),ex.getMessage(),request.getDescription(false));
+		return new ResponseEntity<>(errorMessage,HttpStatus.CONFLICT);
+		
+	}
 
 	@Override
 	protected ResponseEntity<Object> handleConversionNotSupported(ConversionNotSupportedException ex,

@@ -20,11 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bank.sure.controller.dto.RecipientDTO;
 import com.bank.sure.controller.request.RecipientRequest;
+import com.bank.sure.controller.request.TransactionRequest;
 import com.bank.sure.controller.response.RecipientListResponse;
 import com.bank.sure.controller.response.Response;
 import com.bank.sure.domain.Recipient;
 import com.bank.sure.domain.User;
 import com.bank.sure.security.service.UserDetailsImpl;
+import com.bank.sure.service.AccountService;
 import com.bank.sure.service.RecipientService;
 import com.bank.sure.service.UserService;
 
@@ -37,6 +39,9 @@ public class AccountController {
 	
 	@Autowired
 	private RecipientService recipientService;
+	
+	@Autowired
+	private AccountService accountService;
 	
 	
 	@PostMapping("/recipient")
@@ -78,7 +83,7 @@ public class AccountController {
 	}
 	
 	@DeleteMapping("/recipient/{id}")
-	@PreAuthorize("hasRole('ADMIN')")
+	@PreAuthorize("hasRole('ADMIN') or hasRole('CUSTOMER')")
 	public ResponseEntity<Response>deleteRecipient(@PathVariable Long id){
 		UserDetailsImpl userDetails=(UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal(); //getting currrent user 
 		User user=userService.findById(userDetails.getId());
@@ -90,6 +95,38 @@ public class AccountController {
 		return ResponseEntity.ok(response);
 	}
 	
+	@PostMapping("/deposit")
+	@PreAuthorize("hasRole('CUSTOMER')")
+	
+	public ResponseEntity<Response> deposit(@Valid @RequestBody TransactionRequest transactionRequest){
+		UserDetailsImpl userDetails=(UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		User user=userService.findById(userDetails.getId());
+		accountService.deposit(transactionRequest, user);
+		
+		Response response=new Response();  //response uretiyoruz client icin
+		
+		response.setMessage("Amount successfully deposited");
+		response.setSuccess(true);
+		
+		return new ResponseEntity<>(response,HttpStatus.CREATED);
+	}
+	
+	
+	@PostMapping("/withdraw")
+	@PreAuthorize("hasRole('CUSTOMER')")
+	
+	public ResponseEntity<Response> withdraw(@Valid @RequestBody TransactionRequest transactionRequest){
+		UserDetailsImpl userDetails=(UserDetailsImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+		User user=userService.findById(userDetails.getId());
+		accountService.withdraw(transactionRequest, user);
+		
+		Response response=new Response();
+		
+		response.setMessage("Amount successfully withdraw");
+		response.setSuccess(true);
+		
+		return new ResponseEntity<>(response,HttpStatus.CREATED);
+	}
 	
 	private RecipientDTO convertoDTO(Recipient recipient) {
 		RecipientDTO recipientDTO=new RecipientDTO();
@@ -102,6 +139,7 @@ public class AccountController {
 		recipientDTO.setAccountNumber(recipient.getAccount().getAccountNumber());
 		return recipientDTO;
 	}
+	
 	
 	
 	

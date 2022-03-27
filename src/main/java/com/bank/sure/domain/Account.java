@@ -39,7 +39,7 @@ public class Account {
 	
 	private BigDecimal accountBalance;
 	
-	@OneToMany(mappedBy="account", cascade=CascadeType.ALL,fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="account", cascade=CascadeType.ALL,fetch=FetchType.LAZY)  //cascade all- iliskili tablolarda da gerektiginde guncelleme yapmak icn
 	@JsonIgnore
 	private List<Transaction> transactions;
 	
