@@ -2,6 +2,7 @@ package com.bank.sure.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -13,6 +14,8 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import com.bank.sure.security.AuthEntryPointJwt;
 import com.bank.sure.security.AuthTokenFilter;
@@ -70,6 +73,7 @@ public class WebSecutiryConfig extends WebSecurityConfigurerAdapter {
 		.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and() //exceptionlarin yonetimi ile alakali izin veriyoruz
 		.sessionManagement() //session acip
 		.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()//sessioni statesiz bicimde kullaniyoruz
+		.authorizeHttpRequests().antMatchers(HttpMethod.OPTIONS,"/**").permitAll().and() //option -preflight request comes with options http method
 		.authorizeRequests() //requestleri authirzed yap ve
 		.antMatchers("/register","/login")  //ant macthers la sifresiz alanlari belirle "/auth/** authdan sonrkailer hep sifresiz olsn demek
 		.permitAll()
@@ -86,6 +90,8 @@ public class WebSecutiryConfig extends WebSecurityConfigurerAdapter {
 		// TODO Auto-generated method stub
 		super.configure(web);
 	}
+	
+
 	
 	
 
