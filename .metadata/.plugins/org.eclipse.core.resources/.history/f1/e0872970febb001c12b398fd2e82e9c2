@@ -1,0 +1,13 @@
+package com.bank.sure.config;
+import org.springframework.context.annotation.Configuration;
+
+
+
+@Configuration
+@OpenAPIDefinition(info=@Info(title="SureBank API",version="0.0.1"),
+security=@SecurityRequirement(name="Bearer"))
+
+@SecurityScheme(name="Bearer",type=SecuritySchemeType.HTTP,scheme="Bearer")
+public class OpenAPIConfiguration {
+
+}

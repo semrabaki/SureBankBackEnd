@@ -42,6 +42,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\semra baki\git\SureBankBackEnd"/>
+			<item value="C:\Users\semra baki\SureBankBackEnd"/>
 			<item value="C:\Users\semra baki\Documents\workspace-spring-tool-suite-4-4.13.1.RELEASE\surebank"/>
 		</list>
 	</section>
