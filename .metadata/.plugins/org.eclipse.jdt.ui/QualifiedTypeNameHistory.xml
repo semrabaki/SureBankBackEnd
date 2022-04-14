@@ -1,2 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.extension.ExtendWith"/>
+    <fullyQualifiedTypeName name="org.mockito.junit.jupiter.MockitoExtension"/>
+    <fullyQualifiedTypeName name="org.mockito.Mock"/>
+    <fullyQualifiedTypeName name="com.bank.sure.service.AccountService"/>
+    <fullyQualifiedTypeName name="com.bank.sure.service.UserService"/>
+    <fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="com.bank.sure.controller.request.TransactionRequest"/>
+    <fullyQualifiedTypeName name="com.bank.sure.domain.User"/>
+    <fullyQualifiedTypeName name="com.bank.sure.security.service.UserDetailsImpl"/>
+    <fullyQualifiedTypeName name="org.mockito.Mockito"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.Authentication"/>
+</qualifiedTypeNameHistroy>
