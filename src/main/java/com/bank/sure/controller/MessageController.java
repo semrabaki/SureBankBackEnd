@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -63,7 +64,8 @@ public class MessageController {
 	}
 	//@Valid annotation checks the validation condiitons which are created in the entity class with different annotations such as @Size,@NotNull
 	
-	@PostMapping
+	
+	@PostMapping("/visitor")
 	public ResponseEntity<Response>createMessage(@Valid @RequestBody MessageDTO messageDTO)
 	{
 		Message message=convertTo(messageDTO);
@@ -75,11 +77,12 @@ public class MessageController {
 		response.setSuccess(true);
 		
 		//Static
-		return ResponseEntity.ok(response); //this is returning the success message and sttaus to the client-if we want to return anything to client we shoudl use response entity
-		//return  new ResponseEntity<>(response, HttpStatus.CREATED); this is how you create a new response entity for post
+		//return ResponseEntity.ok(response); //this is returning the success message and sttaus to the client-if we want to return anything to client we shoudl use response entity
+		return  new ResponseEntity<>(response, HttpStatus.CREATED);// this is how you create a new response entity for post
 	}
 	
 	@GetMapping
+	@PreAuthorize("hasRole('ADMIN')")
 	public ResponseEntity<List<MessageDTO>>getAll(){
 		
 		List<Message> allMessage= messageService.getAll();
@@ -89,8 +92,9 @@ public class MessageController {
 		return new ResponseEntity<>(messageList, HttpStatus.OK);  //in the avove method we used the response entity static method in this method we created new response entity and put the http status  there are two usage
 	}
 	
-	//localhost:8081/message/1
-	@GetMapping("/{id}")
+	//localhost:8080/message/id
+		@GetMapping("/{id}")
+		@PreAuthorize("hasRole('ADMIN')")
 	public ResponseEntity<MessageDTO> getMessage(@PathVariable Long id){
 		
 		Message message= messageService.getMessage(id);
@@ -100,8 +104,8 @@ public class MessageController {
 		return ResponseEntity.ok(messageDTO);
 	}
 
-	//localhost:8081/message/1
-	@GetMapping("/request")
+		@GetMapping("/request")
+		@PreAuthorize("hasRole('ADMIN')")
 	public ResponseEntity<MessageDTO> getMessagebyRequest(@RequestParam Long id){
 		
 		
@@ -112,7 +116,8 @@ public class MessageController {
 		return ResponseEntity.ok(messageDTO);
 	}
 	
-	@DeleteMapping("/{id}")
+		@DeleteMapping("/{id}")
+		@PreAuthorize("hasRole('ADMIN')")
 	public ResponseEntity<Response>deleteMessage(@PathVariable Long id){
 		logger.info("Client want to delete message id {}:",id);
 		messageService.deleteMessage(id);
@@ -127,7 +132,8 @@ public class MessageController {
 	}
 	
 	// for update and post we use valid annotation since we use response body
-	@PutMapping("/{id}")
+		@PutMapping("/{id}")
+		@PreAuthorize("hasRole('ADMIN')")
 	public ResponseEntity<Response>updateMessage(@PathVariable Long id, @Valid @RequestBody MessageDTO messageDTO){
 		
 		Message message=convertTo(messageDTO);

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 @RestController
-@RequestMapping("/management")
+@RequestMapping("/surebankmanagement")
 public class BeanController {
 	
 	//With this class we are listing the beans are created in this application 

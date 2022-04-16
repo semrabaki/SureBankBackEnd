@@ -73,9 +73,9 @@ public class WebSecutiryConfig extends WebSecurityConfigurerAdapter {
 		.exceptionHandling().authenticationEntryPoint(unauthorizedHandler).and() //exceptionlarin yonetimi ile alakali izin veriyoruz
 		.sessionManagement() //session acip
 		.sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()//sessioni statesiz bicimde kullaniyoruz
-		.authorizeHttpRequests().antMatchers(HttpMethod.OPTIONS,"/**").permitAll().and() //option -preflight request comes with options http method
-		.authorizeRequests() //requestleri authirzed yap ve
-		.antMatchers("/register","/login")  //ant macthers la sifresiz alanlari belirle "/auth/** authdan sonrkailer hep sifresiz olsn demek
+		.authorizeRequests().antMatchers(HttpMethod.OPTIONS,"/**").permitAll().and() //option -preflight request comes with options http method
+		.authorizeRequests().and() //requestleri authirzed yap ve
+		.authorizeRequests().antMatchers("/register","/login","/message/visitor","/management/**") //ant macthers la sifresiz alanlari belirle "/auth/** authdan sonrkailer hep sifresiz olsn demek
 		.permitAll()
 		.anyRequest().authenticated();
 		
@@ -83,15 +83,26 @@ public class WebSecutiryConfig extends WebSecurityConfigurerAdapter {
 	}
 	
 	
+//	for swagger purpose
+	
+	private static final String[] AUTH_LIST= {
+			"/index.html",
+			"/public/**",
+			"/v3/api-docs/**",
+			"/configuration/ui", 
+			"/swagger-resources", 
+			"/configuration/security", 
+			"/swagger-ui/**", 
+			"/webjars/**",
+			"/swagger/**"
+	};
 	
 	
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		// TODO Auto-generated method stub
-		super.configure(web);
+		 web.ignoring().antMatchers(AUTH_LIST);
 	}
 	
-
 	
 	
 

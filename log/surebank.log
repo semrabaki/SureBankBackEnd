@@ -34,3 +34,206 @@
 2022-04-15 10:55:24,806 INFO  [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-04-15 10:55:24,810 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
 2022-04-15 10:55:24,821 INFO  [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-04-16 13:53:43,796 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 20744 (C:\Users\semra baki\surebankbackendv2\SureBankBackEnd\target\classes started by semra baki in C:\Users\semra baki\surebankbackendv2\SureBankBackEnd)
+2022-04-16 13:53:43,797 INFO  [restartedMain] com.bank.sure.SurebankApplication:The following 1 profile is active: "dev"
+2022-04-16 13:53:43,852 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 13:53:43,853 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 13:53:44,748 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-16 13:53:44,807 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 53 ms. Found 6 JPA repository interfaces.
+2022-04-16 13:53:45,324 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-04-16 13:53:45,331 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-04-16 13:53:45,332 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-16 13:53:45,403 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-04-16 13:53:45,403 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1550 ms
+2022-04-16 13:53:45,592 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-16 13:53:45,626 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-16 13:53:45,744 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-16 13:53:45,846 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-04-16 13:53:46,007 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-04-16 13:53:46,020 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-16 13:53:46,746 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-16 13:53:46,753 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 13:53:47,192 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-16 13:53:47,493 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,494 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/index.html'] with []
+2022-04-16 13:53:47,494 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/public/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,494 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/public/**'] with []
+2022-04-16 13:53:47,494 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,495 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/v3/api-docs/**'] with []
+2022-04-16 13:53:47,495 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,495 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/ui'] with []
+2022-04-16 13:53:47,495 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,495 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-resources'] with []
+2022-04-16 13:53:47,495 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,495 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/security'] with []
+2022-04-16 13:53:47,495 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,495 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-ui/**'] with []
+2022-04-16 13:53:47,495 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,495 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/webjars/**'] with []
+2022-04-16 13:53:47,495 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:53:47,496 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger/**'] with []
+2022-04-16 13:53:47,519 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure any request
+2022-04-16 13:53:48,254 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-04-16 13:53:48,258 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-16 13:53:48,311 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-04-16 13:53:48,327 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 4.965 seconds (JVM running for 5.651)
+2022-04-16 13:53:51,233 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 13:53:51,235 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-04-16 13:53:51,237 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 2 ms
+2022-04-16 13:55:47,823 ERROR [http-nio-8081-exec-4] com.bank.sure.security.AuthEntryPointJwt:Unauthorized eror Full authentication is required to access this resource
+2022-04-16 13:56:01,511 ERROR [http-nio-8081-exec-2] com.bank.sure.security.AuthEntryPointJwt:Unauthorized eror Full authentication is required to access this resource
+2022-04-16 13:59:05,343 INFO  [RMI TCP Connection(16)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-04-16 13:59:05,456 INFO  [RMI TCP Connection(16)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 13:59:05,460 INFO  [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-04-16 13:59:05,463 INFO  [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-04-16 13:59:10,463 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 2280 (C:\Users\semra baki\surebankbackendv2\SureBankBackEnd\target\classes started by semra baki in C:\Users\semra baki\surebankbackendv2\SureBankBackEnd)
+2022-04-16 13:59:10,464 INFO  [restartedMain] com.bank.sure.SurebankApplication:The following 1 profile is active: "dev"
+2022-04-16 13:59:10,497 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 13:59:10,497 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 13:59:11,285 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-16 13:59:11,340 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 49 ms. Found 6 JPA repository interfaces.
+2022-04-16 13:59:11,796 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-04-16 13:59:11,802 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-04-16 13:59:11,803 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-16 13:59:11,878 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-04-16 13:59:11,878 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1381 ms
+2022-04-16 13:59:12,062 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-16 13:59:12,099 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-16 13:59:12,213 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-16 13:59:12,287 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-04-16 13:59:12,425 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-04-16 13:59:12,438 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-16 13:59:13,124 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-16 13:59:13,132 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 13:59:13,554 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-16 13:59:13,856 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,857 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/index.html'] with []
+2022-04-16 13:59:13,857 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/public/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,857 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/public/**'] with []
+2022-04-16 13:59:13,857 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,857 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/v3/api-docs/**'] with []
+2022-04-16 13:59:13,857 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,857 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/ui'] with []
+2022-04-16 13:59:13,857 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,858 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-resources'] with []
+2022-04-16 13:59:13,858 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,858 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/security'] with []
+2022-04-16 13:59:13,858 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,858 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-ui/**'] with []
+2022-04-16 13:59:13,858 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,858 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/webjars/**'] with []
+2022-04-16 13:59:13,858 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 13:59:13,858 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger/**'] with []
+2022-04-16 13:59:13,881 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure any request
+2022-04-16 13:59:14,561 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-04-16 13:59:14,575 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-16 13:59:14,628 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-04-16 13:59:14,640 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 4.507 seconds (JVM running for 5.256)
+2022-04-16 13:59:14,825 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 13:59:14,828 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-04-16 13:59:14,828 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 0 ms
+2022-04-16 13:59:35,254 ERROR [http-nio-8081-exec-3] com.bank.sure.security.AuthEntryPointJwt:Unauthorized eror Full authentication is required to access this resource
+2022-04-16 14:01:39,221 INFO  [RMI TCP Connection(14)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-04-16 14:01:39,298 INFO  [RMI TCP Connection(14)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 14:01:39,301 INFO  [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-04-16 14:01:39,304 INFO  [RMI TCP Connection(14)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-04-16 14:01:44,876 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 17364 (C:\Users\semra baki\surebankbackendv2\SureBankBackEnd\target\classes started by semra baki in C:\Users\semra baki\surebankbackendv2\SureBankBackEnd)
+2022-04-16 14:01:44,877 INFO  [restartedMain] com.bank.sure.SurebankApplication:The following 1 profile is active: "dev"
+2022-04-16 14:01:44,913 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 14:01:44,914 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 14:01:45,773 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-16 14:01:45,840 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+2022-04-16 14:01:46,368 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-04-16 14:01:46,376 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-04-16 14:01:46,376 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-16 14:01:46,450 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-04-16 14:01:46,451 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1537 ms
+2022-04-16 14:01:46,649 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-16 14:01:46,690 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-16 14:01:46,887 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-16 14:01:47,012 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-04-16 14:01:47,207 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-04-16 14:01:47,230 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-16 14:01:48,184 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-16 14:01:48,190 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 14:01:48,758 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-16 14:01:49,138 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,138 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/index.html'] with []
+2022-04-16 14:01:49,139 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/public/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,139 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/public/**'] with []
+2022-04-16 14:01:49,139 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,140 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/v3/api-docs/**'] with []
+2022-04-16 14:01:49,140 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,140 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/ui'] with []
+2022-04-16 14:01:49,140 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,140 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-resources'] with []
+2022-04-16 14:01:49,140 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,140 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/security'] with []
+2022-04-16 14:01:49,140 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,140 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-ui/**'] with []
+2022-04-16 14:01:49,140 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,140 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/webjars/**'] with []
+2022-04-16 14:01:49,140 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:01:49,140 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger/**'] with []
+2022-04-16 14:01:49,176 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure any request
+2022-04-16 14:01:50,233 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-04-16 14:01:50,240 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-16 14:01:50,297 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-04-16 14:01:50,311 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 5.781 seconds (JVM running for 6.51)
+2022-04-16 14:01:50,743 INFO  [RMI TCP Connection(9)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 14:01:50,744 INFO  [RMI TCP Connection(9)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-04-16 14:01:50,746 INFO  [RMI TCP Connection(9)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-04-16 14:03:32,108 INFO  [RMI TCP Connection(11)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-04-16 14:03:32,189 INFO  [RMI TCP Connection(11)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 14:03:32,192 INFO  [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-04-16 14:03:32,196 INFO  [RMI TCP Connection(11)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
+2022-04-16 14:03:37,170 INFO  [restartedMain] com.bank.sure.SurebankApplication:Starting SurebankApplication using Java 11.0.13 on DESKTOP-A79MQ74 with PID 20528 (C:\Users\semra baki\surebankbackendv2\SureBankBackEnd\target\classes started by semra baki in C:\Users\semra baki\surebankbackendv2\SureBankBackEnd)
+2022-04-16 14:03:37,171 INFO  [restartedMain] com.bank.sure.SurebankApplication:The following 1 profile is active: "dev"
+2022-04-16 14:03:37,203 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-16 14:03:37,203 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-16 14:03:38,158 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-16 14:03:38,230 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate:Finished Spring Data repository scanning in 65 ms. Found 6 JPA repository interfaces.
+2022-04-16 14:03:38,827 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat initialized with port(s): 8081 (http)
+2022-04-16 14:03:38,839 INFO  [restartedMain] org.apache.catalina.core.StandardService:Starting service [Tomcat]
+2022-04-16 14:03:38,839 INFO  [restartedMain] org.apache.catalina.core.StandardEngine:Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-04-16 14:03:38,925 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring embedded WebApplicationContext
+2022-04-16 14:03:38,926 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:Root WebApplicationContext: initialization completed in 1722 ms
+2022-04-16 14:03:39,159 INFO  [restartedMain] org.hibernate.jpa.internal.util.LogHelper:HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-16 14:03:39,217 INFO  [restartedMain] org.hibernate.Version:HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-04-16 14:03:39,381 INFO  [restartedMain] org.hibernate.annotations.common.Version:HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-16 14:03:39,473 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Starting...
+2022-04-16 14:03:39,637 INFO  [restartedMain] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Start completed.
+2022-04-16 14:03:39,656 INFO  [restartedMain] org.hibernate.dialect.Dialect:HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2022-04-16 14:03:40,535 INFO  [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator:HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-16 14:03:40,541 INFO  [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 14:03:41,084 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration:spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-04-16 14:03:41,436 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/index.html']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,437 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/index.html'] with []
+2022-04-16 14:03:41,438 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/public/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,438 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/public/**'] with []
+2022-04-16 14:03:41,438 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/v3/api-docs/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,438 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/v3/api-docs/**'] with []
+2022-04-16 14:03:41,438 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/ui']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,438 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/ui'] with []
+2022-04-16 14:03:41,439 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-resources']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,439 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-resources'] with []
+2022-04-16 14:03:41,439 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/configuration/security']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,439 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/configuration/security'] with []
+2022-04-16 14:03:41,439 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger-ui/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,439 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger-ui/**'] with []
+2022-04-16 14:03:41,439 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/webjars/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,440 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/webjars/**'] with []
+2022-04-16 14:03:41,440 WARN  [restartedMain] org.springframework.security.config.annotation.web.builders.WebSecurity:You are asking Spring Security to ignore Ant [pattern='/swagger/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2022-04-16 14:03:41,440 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will secure Ant [pattern='/swagger/**'] with []
+2022-04-16 14:03:41,475 INFO  [restartedMain] org.springframework.security.web.DefaultSecurityFilterChain:Will not secure any request
+2022-04-16 14:03:42,364 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:LiveReload server is running on port 35729
+2022-04-16 14:03:42,372 INFO  [restartedMain] org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver:Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-04-16 14:03:42,448 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer:Tomcat started on port(s): 8081 (http) with context path ''
+2022-04-16 14:03:42,470 INFO  [restartedMain] com.bank.sure.SurebankApplication:Started SurebankApplication in 5.653 seconds (JVM running for 6.338)
+2022-04-16 14:03:44,389 INFO  [RMI TCP Connection(3)-127.0.0.1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-16 14:03:44,390 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Initializing Servlet 'dispatcherServlet'
+2022-04-16 14:03:44,391 INFO  [RMI TCP Connection(3)-127.0.0.1] org.springframework.web.servlet.DispatcherServlet:Completed initialization in 1 ms
+2022-04-16 14:04:32,747 INFO  [RMI TCP Connection(10)-127.0.0.1] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin:Application shutdown requested.
+2022-04-16 14:04:32,855 INFO  [RMI TCP Connection(10)-127.0.0.1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean:Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-16 14:04:32,860 INFO  [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown initiated...
+2022-04-16 14:04:32,866 INFO  [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource:HikariPool-1 - Shutdown completed.
