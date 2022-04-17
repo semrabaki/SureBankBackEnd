@@ -1,0 +1,18 @@
+#-Dspring.profiles.active=prod
+
+logging:
+  level:
+    '[org.springframework.web]': WARN
+    '[org.hibernate]': WARN
+    '[com.bank.sure]': INFO
+
+management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: ['health','info']
+
+  info:
+    env:
+      enabled: true 

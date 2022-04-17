@@ -1,0 +1,17 @@
+#-Dspring.profiles.active=dev
+logging:
+  level:
+    '[org.springframework.web]': DEBUG
+    '[org.hibernate]': INFO
+    '[com.bank.sure]': DEBUG
+    
+  management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: ['health','info','loggers','beans','env','configprops','metrics','threaddump','logfile']
+
+  info:
+    env:
+      enabled: true 

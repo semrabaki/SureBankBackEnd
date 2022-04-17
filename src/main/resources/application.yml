@@ -32,5 +32,12 @@ surebank:
   app:
     jwtSecret: surebank@@12
     jwtExpirationMs: 86400000
+    
+    
+info:
+ application:
+   name: SUREBANK APP
+   description: It is Surebank Web Application developed by SUREBANK Dev. Team
+   version: '@project.version@'
 
    
